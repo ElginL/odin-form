@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat:wght@700&display=swap');
+
+:root {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.img-container {
+    width: 45vw;
+    height: 100vh;
+    background: url('./images/planet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 350px;
+}
+
+.project-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    margin-top: 30%;
+}
+
+.project-title-container > img {
+    width: 15%;
+}
+
+.details-container {
+    width: 100%;
+    background-color: rgb(245, 241, 241);
+    font-size: 1.5rem;
+}
+
+.description-text,
+.signup-form,
+.buttons-container {
+    padding: 30px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.form-title {
+    margin: 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row > fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.form-row > fieldset > label {
+    font-size: 0.8rem;
+}
+
+.form-row > fieldset > input {
+    height: 1.5rem;
+    outline: none;
+    border: 1px solid #cfd3da;
+    border-radius: 3px;
+    width: 15vw;
+    min-width: 150px;
+}
+
+.form-row > fieldset > input:focus:valid {
+    border: 1px solid darkgreen;
+}
+
+.form-row > fieldset > input:focus:invalid {
+    border: 1px solid red;
+}
+
+.buttons-container {
+    padding-top: 0;
+}
+
+.submit-btn {
+    background-color: #041f5f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem;
+    box-shadow: 2px 2px 2px 0 #041f5f;
+    margin-bottom: 30px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: #1444b6;
+}
+
+.redirect-link {
+    color: #041f5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 751px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .project-title-container {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 375px) {
+    .form-row {
+        flex-direction: column;
+    }
+}

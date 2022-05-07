@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Sign up</title>
+</head>
+<body>
+    <main>
+        <div class="img-container">
+            <div class="project-title-container">
+                <img src="./images/odin-lined.png" alt="Odin logo" />
+                <p>Project Planet</p>
+            </div>
+        </div>
+        <div class="details-container">
+            <div class="form-description">
+                <p class="description-text">
+                    Excited to uncover the mysteries of outer space? <br />
+                    Join us on a journey to uncover the common myths and truths
+                    about Mars, Jupiter, and Planet X! <br />
+                    You will not be disappointed!
+                </p>
+            </div>
+            <form action="" method="POST" class="signup-form">
+                <p class="form-title">Let's do this!</p>
+                <div class="form-row">
+                    <fieldset>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required placeholder="First Name"/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="name-input">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required placeholder="Last Name"/>
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Email" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phonenumber" required placeholder="Phone number" min="9999999" />      
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Password" />
+                    </fieldset>
+                    <fieldset>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password" />
+                    </fieldset>
+                </div>
+            </form>
+            <div class="buttons-container">
+                <button type="submit" class="submit-btn">Create Account</button>
+                <div class="log-in-link-container">
+                    Already have an account? <br>
+                    <a href="" class="redirect-link">Log in</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
